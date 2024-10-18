@@ -2,8 +2,6 @@
 #!author=kchen
 #!desc=修改cdn.beekka.com域名下图片请求的Referer、Dnt字段
 
-https://cdn.beekka.com/blogimg/asset/202410/bg2024101202.webp
-
 [Header Rewrite]
 ^https?:\/\/cdn\.beekka\.com\/.+\.(jpg|jpeg|gif|png|webp) header-del Referer
 ^https?:\/\/cdn\.beekka\.com\/.+\.(jpg|jpeg|gif|png|webp) header-add Referer "https://www.ruanyifeng.com/"
