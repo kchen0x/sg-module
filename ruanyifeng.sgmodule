@@ -10,6 +10,7 @@
 ^https?:\/\/cdn\.beekka\.com\/.+\.(jpg|jpeg|gif|png|webp) header-add sec-fetch-site cross-site
 ^https?:\/\/cdn\.beekka\.com\/.+\.(jpg|jpeg|gif|png|webp) header-add sec-fetch-mode no-cors
 ^https?:\/\/cdn\.beekka\.com\/.+\.(jpg|jpeg|gif|png|webp) header-add sec-fetch-dest image
+^https?:\/\/cdn\.beekka\.com\/.+\.(jpg|jpeg|gif|png|webp) header-add priority i
 
 [MITM]
 hostname = %APPEND% cdn.beekka.com
