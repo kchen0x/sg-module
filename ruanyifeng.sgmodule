@@ -7,6 +7,9 @@
 ^https?:\/\/cdn\.beekka\.com\/.+\.(jpg|jpeg|gif|png|webp) header-add Referer "https://www.ruanyifeng.com/"
 ^https?:\/\/cdn\.beekka\.com\/.+\.(jpg|jpeg|gif|png|webp) header-del Dnt
 ^https?:\/\/cdn\.beekka\.com\/.+\.(jpg|jpeg|gif|png|webp) header-add Dnt 1
+^https?:\/\/cdn\.beekka\.com\/.+\.(jpg|jpeg|gif|png|webp) header-add sec-fetch-site cross-site
+^https?:\/\/cdn\.beekka\.com\/.+\.(jpg|jpeg|gif|png|webp) header-add sec-fetch-mode no-cors
+^https?:\/\/cdn\.beekka\.com\/.+\.(jpg|jpeg|gif|png|webp) header-add sec-fetch-dest image
 
 [MITM]
 hostname = %APPEND% cdn.beekka.com
